@@ -1,11 +1,10 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+import React, { useState } from 'react';
 
 function App() {
 
-
-
+  const [peso, setPeso] = useState(0);
+  const [mantenimiento, setMantenimiento] = useState(0);
+  const [mMasM2, setmMasM2] = useState(0);
 
   return (
     <>
@@ -15,14 +14,22 @@ function App() {
           <p className='minititulo'>Completa todos los datos</p>
 
           <div className='inputcontainer'>
-            <input className='inputcustom' type="text" name="peso" id="peso" placeholder='Ingresa el peso' />
+          <input
+              className='inputcustom'
+              type="text"
+              name="peso"
+              id="peso"
+              placeholder='Ingresa el peso'
+              value={peso}
+              onChange={(e) => setPeso(e.target.value)}
+            />
             <span className="unidadmedida">
               Kg
             </span>
           </div>
           <button className='mainbutton'>Calcular</button>
 
-          <div style={{ "margin-top": "5px" }}>
+          <div style={{ "marginTop": "5px" }}>
             <p className='infotext'>
               70 cc/hr
             </p>
