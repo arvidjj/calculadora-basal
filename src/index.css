@@ -92,7 +92,6 @@ h1 {
   padding: 0.8em 1.8em;
   outline: none;
   background-color: var(--lightbackground);
-  width:65%;
 
   border: 1px solid transparent;
 }
@@ -115,5 +114,17 @@ h1 {
 }
 
 .listitem {
-  
+
+}
+
+.inputcontainer {
+  display:flex;
+  align-items: center;
+}
+
+.unidadmedida {
+  border: 1px solid var(--secondarycolor);
+  background-color: var(--lightbackground);
+  color: var(--secondarycolor);
+  padding: 0.55em;
 }

@@ -4,6 +4,9 @@ import viteLogo from '/vite.svg'
 
 function App() {
 
+
+
+
   return (
     <>
       <div className='two-card'>
@@ -11,10 +14,15 @@ function App() {
           <h1>Hidratación Basal</h1>
           <p className='minititulo'>Completa todos los datos</p>
 
-          <input className='inputcustom' type="text" name="peso" id="peso" placeholder='Ingresa el peso'/>
+          <div className='inputcontainer'>
+            <input className='inputcustom' type="text" name="peso" id="peso" placeholder='Ingresa el peso' />
+            <span className="unidadmedida">
+              Kg
+            </span>
+          </div>
           <button className='mainbutton'>Calcular</button>
 
-          <div style={{"margin-top":"5px"}}>
+          <div style={{ "margin-top": "5px" }}>
             <p className='infotext'>
               70 cc/hr
             </p>
@@ -28,7 +36,7 @@ function App() {
 
           <ul>
             <li className='listitem'>
-                De 0kg a 10kg, se calcular 100cc por cada kilo.
+              De 0kg a 10kg, se calcular 100cc por cada kilo.
             </li>
             <li>
               Se suman 50cc por cada kilo de peso por arriba de 10kg hasta 20 kg
