@@ -96,6 +96,7 @@ h1 {
   outline: none;
   background-color: var(--lightbackground);
   width:15rem;
+
   border: 1px solid transparent;
 }
 
